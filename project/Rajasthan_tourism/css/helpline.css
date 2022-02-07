@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+nav img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    margin: 3px 6px;
+
+}
+nav #logo{
+    margin: 10px 34px;
+}
+nav ul li{
+    margin: 18px;
+}
+nav  li a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    display: block;
+    /* font-family: 'Lobster', cursive; */
+    /* text-decoration: underline; */
+}
+nav  li a:hover{
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    background-color: aliceblue;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(187, 187, 139);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.burger{
+    display: none;
+    right: 5%;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+/* Section - 1 */
+
+#home{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 510px;
+}
+section::before{
+    content: "";
+    background: url('../help1.png') no-repeat center center/cover;
+    display: block;
+    height: 208%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.8;
+    
+    left: 0px;
+    top: 0px;
+}
+section p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Forms */
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* border: 8px solid rgb(73, 78, 29); */
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.mb-3{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
+    /* border-radius: 35px; */
+    padding: 10px;
+}
+
+.form-control{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    opacity: 0.7;
+}
+
+.form-label{
+    display: block;
+    margin: auto;
+    /* border: 2px solid brown; */
+    border-radius: 10px;
+    font-size: 1.6rem;
+    color: black;
+    /* font-family: 'Lobster', cursive; */
+}
+
+.form-label:hover{
+    border-radius: 10px;
+    background-color:darkkhaki;
+    padding: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    padding: 10px 100px;
+    border-radius: 15px;
+    opacity: 0.8;
+    background-color: #dccaaf;
+    cursor: pointer;
+    height: 1;
+    height: 57px;
+    font-size: 1.3rem;
+    /* font-family: 'Lobster', cursive; */
+}
+.btn:hover{
+    font-size: 1.5rem;
+}
+.burger{
+    display: none;
+    right: 5%;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+#container-fluid{
+    color: white;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 290px;
+}
+@media (max-width:767px)
+{
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 150px;
+    }
+    nav img {
+        height: 139px;
+        width: 139px;
+        border-radius: 70px;
+        margin: 3px 6px;
+    }
+    nav li a{
+        font-size: 2.5rem;
+    }
+    .burger{
+        display: block;
+        margin: auto;
+        top: 54px;
+    }
+    .mb-3{
+        flex-direction: column;
+    }
+    .form-label{
+        font-size: 2.6rem;
+    }
+    #home{
+        padding: 150px 196px;
+    }
+    .btn{
+        display: block;
+        margin: 28px 0px;
+        padding: 10px 106px;
+        border-radius: 15px;
+        opacity: 0.8;
+        background-color: #dccaaf;
+        cursor: pointer;
+        height: 1;
+        height: 90px;
+        font-size: 2.3rem;
+        font-family: 'Lobster', cursive;
+    }
+    .form-control {
+        border-radius: 10px;
+        padding: 13px;
+        background-color: antiquewhite;
+        opacity: 0.7;
+    }
+    .form-text{
+        font-size: 1.2rem;
+    }
+    #container-fluid {
+        color: white;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 202px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1300px)
+{
+   .h-nav{
+        height: 150px;
+   }
+   
+    nav img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50px;
+        margin: 3px 6px;
+    }
+    nav li a {
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 2.1rem;
+        display: block;
+        font-family: 'Lobster', cursive;
+        text-decoration: underline;
+    }
+    #home {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 172px 200px;
+        height: 565px;
+    }
+    .form-label {
+        display: block;
+        margin: auto;
+        /* border: 2px solid brown; */
+        border-radius: 10px;
+        font-size: 2.6rem;
+        color: black;
+        font-family: 'Lobster', cursive;
+    }
+    .btn {
+        display: block;
+        margin: auto;
+        padding: 5px 100px;
+        border-radius: 15px;
+        opacity: 0.8;
+        background-color: #dccaaf;
+        cursor: pointer;
+        height: 1;
+        height: 57px;
+        font-size: 2.3rem;
+        font-family: 'Lobster', cursive;
+    }
+    section::before{
+        content: "";
+        background: url('../help1.png') no-repeat center center/cover;
+        display: block;
+        height: 120%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        opacity: 0.8;
+        
+        left: 0px;
+        top: 0px;
+    }
+}

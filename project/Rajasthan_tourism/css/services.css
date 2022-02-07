@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+nav img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    margin: 3px 6px;
+
+}
+nav #logo{
+    margin: 10px 34px;
+}
+nav ul li{
+    margin: 18px;
+}
+nav  li a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    display: block;
+    /* font-family: 'Lobster', cursive;
+    text-decoration: underline; */
+}
+nav  li a:hover{
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    background-color: aliceblue;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(187, 187, 139);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+/* card */
+#home{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin: 35px 0px;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 10rem 18rem; 
+    position: relative;
+}
+
+.card{
+    border: 2px solid red;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 330px;
+    width: 18rem;
+    /* width: 900px; */
+    margin: 5px;
+    
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    /* text-decoration:underline; */
+
+}
+
+.card img{
+    border-radius: 9px;
+    height: 250px ;
+    width: 290px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(187, 187, 139);
+    z-index: -1;
+    height: 230%;
+    width: 100%;
+    opacity: 0.3;
+
+}
+.burger{
+    display: none;
+    right: 5%;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media(max-width:767px)
+{
+    .burger{
+        display: block;
+        margin: auto;
+        top: 54px;
+    }
+    #home::before{
+        width: 100%;
+        height: 277%;
+        overflow: hidden;
+    }
+    nav img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50px;
+        margin: 3px 6px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;    
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 150px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 92px 0px;
+    }
+    .card{
+        height: 550px;
+        width: 30rem;
+    }
+    .card img {
+        border-radius: 9px;
+        height: 318px;
+        width: 30rem;
+    }
+    #home {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+    }
+    .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.2rem;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        /* text-decoration: underline; */
+    }
+    .card-text{
+        font-size: 1.8rem;
+    }
+    nav li a{
+        font-size: 2.5rem;
+    }
+}
+#container-fluid{
+    color: white;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:768px) and (max-width:1300px)
+{
+  
+    #home {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+    }
+    #home::before{
+        width: 100%;
+        height: 290%;
+        overflow: hidden;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;    
+    }
+    nav img {
+     height: 110px;
+     width: 120px;
+     border-radius: 58px;
+     margin: 3px 6px;
+ }
+ nav li a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    display: block;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+}
+ .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 92px 0px;
+}
+.card{
+    width: 25rem;
+    height: 40rem;
+} 
+.card img {
+    border-radius: 9px;
+    height: 40rem;
+    width:25rem;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: underline;
+}
+.card-text{
+    font-size: 1.8rem;
+}
+}
+
